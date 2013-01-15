@@ -1,0 +1,16 @@
+<div class="post">
+  <%= render @post %>
+
+  <hr/>
+
+  <div class="comments">
+    <% @post.comments.each do |comment| %>
+      <div id="comment-<%=comment.id%>">
+        <%= comment.name %> says:
+        <p>
+          <%= comment.content %>
+        </p>
+      </div>
+    <% end %>
+   </div>
+</div>
