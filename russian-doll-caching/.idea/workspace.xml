@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0cb6-cbac-46f1-8cef-7afed4e54e4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pre_posts/_post.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pre_posts/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/russian_doll_posts/_post.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/russian_doll_posts/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/russian_doll_posts/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tasks/create_data.rake" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/posts_presenter.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/_post.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pre_posts_controller.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/pre_posts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/comment.rb" afterPath="$PROJECT_DIR$/app/models/comment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/presenters/post_presenter.rb" afterPath="$PROJECT_DIR$/app/presenters/post_presenter.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130115001045_create_posts.rb" afterPath="$PROJECT_DIR$/db/migrate/20130115001045_create_posts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130115001443_create_comments.rb" afterPath="$PROJECT_DIR$/db/migrate/20130115001443_create_comments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/posts_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/posts_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pre_posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pre_posts_controller.rb" />
     </list>
     <ignored path="russian-doll-caching.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pre_posts_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pre_posts_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pre_posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="51" selection-end="365" vertical-scroll-proportion="0.0">
+            <state line="11" column="60" selection-start="218" selection-end="274" vertical-scroll-proportion="0.24774775">
               <folding />
             </state>
           </provider>
@@ -170,10 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="russian_doll_posts_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="russian_doll_posts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/russian_doll_posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="12" selection-start="274" selection-end="274" vertical-scroll-proportion="0.22522523">
+            <state line="10" column="12" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -228,7 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/pre_posts/show.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20130127193437_create_users.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -244,6 +223,7 @@
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
         <option value="$PROJECT_DIR$/app/views/russian_doll_posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/russian_doll_posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/pre_posts_controller.rb" />
       </list>
     </option>
   </component>
@@ -907,13 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pre_posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="51" selection-end="365" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pre_posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="14" selection-start="0" selection-end="333" vertical-scroll-proportion="-5.0">
@@ -937,7 +910,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/russian_doll_posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="274" selection-end="274" vertical-scroll-proportion="0.22522523">
+        <state line="10" column="12" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pre_posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="60" selection-start="218" selection-end="274" vertical-scroll-proportion="0.24774775">
           <folding />
         </state>
       </provider>
