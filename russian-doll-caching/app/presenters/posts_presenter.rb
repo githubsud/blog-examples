@@ -1,3 +1,0 @@
-class PostsPresenter
-
-end

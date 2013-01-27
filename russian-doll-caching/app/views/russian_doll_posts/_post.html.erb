@@ -1,0 +1,7 @@
+<div id="post-<%=post.id%>">
+  <h1><%= link_to post.title, russian_doll_post_path(post) %></h1>
+  <h3><%= post.user.name %></h3>
+  <div class="content">
+    <%= post.content %>
+  </div>
+</div>

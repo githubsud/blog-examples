@@ -1,5 +1,6 @@
 RussianDollCaching::Application.routes.draw do
-  resources :posts
+  resources :pre_posts
+  resources :russian_doll_posts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

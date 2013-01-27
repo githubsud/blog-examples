@@ -1,10 +1,10 @@
 class PostPresenter
-  def initialize(post_id)
-    @post_id = post_id
+  def initialize(post)
+    @post = post
   end
 
-  def post
-    @post ||= Post.includes(:comments).find(@post_id)
+  def comments
+    Comment.includes(:user).where(post_id: @post.id)
   end
 
 end

@@ -1,12 +1,12 @@
 <div class="post">
-  <%= render @post %>
+  <%= render partial: 'post', locals: {post: @post} %>
 
   <hr/>
 
   <div class="comments">
     <% @post.comments.each do |comment| %>
       <div id="comment-<%=comment.id%>">
-        <%= comment.name %> says:
+        <%= comment.user.name %> says:
         <p>
           <%= comment.content %>
         </p>
