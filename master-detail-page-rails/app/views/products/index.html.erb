@@ -1,7 +1,31 @@
-<ul>
-  <% @products.each do |product| %>
-    <li>
-      <img src="<%= product.image_url%>"/>
+<div class="container">
+  <div class="header">
+    Header - <a href="/products/">Product List</a>
+  </div>
+  <ul>
+    <li id="product_details" style="display: none">
+      <% if @product.present? %>
+        <%= render file: 'products/product' %>
+      <% end %>
     </li>
-  <% end %>
-</ul>
+  </ul>
+  <ul class="products" id="product_list" style="display: none">
+    <% @products.each do |product| %>
+      <li>
+        <a href="/products/<%=product.id%>">
+          <img src="<%= product.image_url%>"/>
+          <div>
+            <%= product.name %>
+          </div>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    window.app = new ProductRouter();
+    Backbone.history.start({pushState: true})
+  });
+</script>
