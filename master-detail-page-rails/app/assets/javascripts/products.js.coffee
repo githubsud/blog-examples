@@ -57,7 +57,7 @@ class window.ProductView extends Backbone.View
 class window.ProductRouter extends Backbone.Router
 
   routes:
-    'master-detail-page-rails/products/': 'indexPage',
+    'master-detail-page-rails/products': 'indexPage',
     'master-detail-page-rails/products/:product_id': 'productDetail'
 
   initialize: ->

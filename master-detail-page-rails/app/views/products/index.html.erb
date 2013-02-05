@@ -1,6 +1,6 @@
 <div class="container">
   <div class="header">
-    Header - <a href="/products/">Product List</a>
+    Header - <a href="/master-detail-page-rails/products/">Product List</a>
   </div>
   <div id="product_details" style="display: none">
     <% if @product.present? %>
@@ -10,7 +10,7 @@
   <ul class="products" id="product_list" style="display: none">
     <% @products.each do |product| %>
       <li>
-        <a href="/products/<%=product.id%>">
+        <a href="/master-detail-page-rails/products/<%=product.id%>">
           <img src="<%= product.image_url%>"/>
           <div>
             <%= product.name %>
