@@ -1,8 +1,12 @@
+# Model to hold the current state
+# position: last scrollTop before clicking an item
+# state: Can be ITEM_VIEW or PRODUCT_LIST
+# productDetailsHTML: The HTML for the detail view
 class window.ProductViewState extends Backbone.Model
   @PRODUCT_LIST = 'product_list'
   @ITEM_VIEW = 'item_view'
 
-
+# View to manage transitions between two states
 class window.ProductView extends Backbone.View
   el: '.container'
   events:
@@ -13,30 +17,33 @@ class window.ProductView extends Backbone.View
     @model = new ProductViewState()
     @model.on('change', this.render)
 
+  getModel: =>
+    @model
+
+  # Navigates to single item view
   onClickProduct: (e) =>
     e.preventDefault();
 
-    @model.set('state', ProductViewState.ITEM_VIEW)
-
-    $(e.currentTarget).after($('#product_details').detach())
-
     product_url = $(e.currentTarget).attr('href');
-    app.navigate(product_url);
+    app.navigate(product_url, { trigger: true });
 
     $.ajax({
       url: product_url
     }).done(this.onProductArrived)
 
   onProductArrived: (data, textStatus, jqXHR) =>
-    @model.set('productDetailsHTML', data)
+    @model.set {productDetailsHTML: data }
 
   onClickBackToList: (e) =>
     e.preventDefault();
-    @model.set({state: ProductViewState.PRODUCT_LIST, productDetailsHTML: null})
+    app.navigate('products/', { trigger: true });
 
   render: (e) =>
     if @model.get('state') == ProductViewState.PRODUCT_LIST
-      $('#product_list').show()
+      if $('#product_list').is(':hidden')
+        $('#product_list').show()
+        $(window).scrollTop(@model.get('position'))
+
       $('#product_details').hide()
     else
       $('#product_list').hide()
@@ -54,9 +61,10 @@ class window.ProductRouter extends Backbone.Router
 
   initialize: ->
     window.activeView = new ProductView()
+    @model = window.activeView.getModel()
 
   indexPage: ->
-    $('#product_list').show()
+    @model.set({state: ProductViewState.PRODUCT_LIST, productDetailHTML: null})
 
   productDetail: (productId) ->
-    $('#product_details').show()
+    @model.set({state: ProductViewState.ITEM_VIEW, position: $(window).scrollTop()})

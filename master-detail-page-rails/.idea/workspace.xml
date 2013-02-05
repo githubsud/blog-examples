@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42b7e741-99a7-4b1e-9470-1fa5a15fa373" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/products/product.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/products.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/products.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/products.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/products.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/index.html.erb" afterPath="$PROJECT_DIR$/app/views/products/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../russian-doll-caching/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../russian-doll-caching/.idea/workspace.xml" />
     </list>
@@ -99,7 +92,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="7" selection-start="279" selection-end="279" vertical-scroll-proportion="-6.25">
+            <state line="4" column="6" selection-start="110" selection-end="113" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -108,7 +101,7 @@
       <file leaf-file-name="products.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/products.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="22" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.6126761">
+            <state line="45" column="0" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.53521127">
               <folding />
             </state>
           </provider>
@@ -135,7 +128,7 @@
       <file leaf-file-name="backbone.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/backbone.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1497" column="14" selection-start="55795" selection-end="55795" vertical-scroll-proportion="0.0">
+            <state line="349" column="24" selection-start="12205" selection-end="12205" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -189,8 +182,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/products.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/products/product.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/products.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/products.js.coffee" />
       </list>
     </option>
   </component>
@@ -788,13 +781,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/backbone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1497" column="14" selection-start="55795" selection-end="55795" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/underscore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1225" column="14" selection-start="41416" selection-end="41416" vertical-scroll-proportion="0.0">
@@ -878,16 +864,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/backbone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="349" column="24" selection-start="12205" selection-end="12205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="279" selection-end="279" vertical-scroll-proportion="-6.25">
+        <state line="4" column="6" selection-start="110" selection-end="113" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/products.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="22" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.6126761">
+        <state line="45" column="0" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.53521127">
           <folding />
         </state>
       </provider>

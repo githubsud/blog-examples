@@ -2,13 +2,11 @@
   <div class="header">
     Header - <a href="/products/">Product List</a>
   </div>
-  <ul>
-    <li id="product_details" style="display: none">
-      <% if @product.present? %>
-        <%= render file: 'products/product' %>
-      <% end %>
-    </li>
-  </ul>
+  <div id="product_details" style="display: none">
+    <% if @product.present? %>
+      <%= render file: 'products/product' %>
+    <% end %>
+  </div>
   <ul class="products" id="product_list" style="display: none">
     <% @products.each do |product| %>
       <li>
