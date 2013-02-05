@@ -8,8 +8,7 @@ class ProductsController < ApplicationController
 
     if params[:product_id].present? and request.xhr?
       render 'product', layout: false
-    else
-
     end
+    # else - render regular index page
   end
 end

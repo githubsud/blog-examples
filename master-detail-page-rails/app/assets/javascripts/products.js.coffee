@@ -36,7 +36,7 @@ class window.ProductView extends Backbone.View
 
   onClickBackToList: (e) =>
     e.preventDefault();
-    app.navigate('products/', { trigger: true });
+    app.navigate('master-detail-page-rails/products/', { trigger: true });
 
   render: (e) =>
     if @model.get('state') == ProductViewState.PRODUCT_LIST
@@ -52,19 +52,21 @@ class window.ProductView extends Backbone.View
     if @model.get('productDetailsHTML') != null
       $('#product_details').html(@model.get('productDetailsHTML'))
     else
-      $('#product_details').html('');
+      $('#product_details').empty()
 
 class window.ProductRouter extends Backbone.Router
+
   routes:
-    'products/': 'indexPage',
-    'products/:product_id': 'productDetail'
+    'master-detail-page-rails/products/': 'indexPage',
+    'master-detail-page-rails/products/:product_id': 'productDetail'
 
   initialize: ->
     window.activeView = new ProductView()
     @model = window.activeView.getModel()
+    Backbone.history.start({pushState: true})
 
   indexPage: ->
-    @model.set({state: ProductViewState.PRODUCT_LIST, productDetailHTML: null})
+    @model.set({state: ProductViewState.PRODUCT_LIST, productDetailsHTML: null})
 
   productDetail: (productId) ->
     @model.set({state: ProductViewState.ITEM_VIEW, position: $(window).scrollTop()})
