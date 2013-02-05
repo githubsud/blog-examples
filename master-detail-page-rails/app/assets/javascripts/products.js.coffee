@@ -36,7 +36,7 @@ class window.ProductView extends Backbone.View
 
   onClickBackToList: (e) =>
     e.preventDefault();
-    app.navigate('master-detail-page-rails/products/', { trigger: true });
+    app.navigate('master-detail-page-rails/products', { trigger: true });
 
   render: (e) =>
     if @model.get('state') == ProductViewState.PRODUCT_LIST
