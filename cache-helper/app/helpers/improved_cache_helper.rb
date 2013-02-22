@@ -6,7 +6,7 @@
 # Keys are separate from timestamp to allow the dog pile protection and are constructed using custom_cache_key
 #
 # Usage:
-# <% custom_cache custom_cache_key('product-tile', @product.id), @product.updated_at do %>
+# <% custom_cache custom_cache_key('product-tile', @product.id), @product.updated_at, dogpile_protection: true do %>
 #   <%= @product.name %>
 # <% end %>
 #
@@ -49,7 +49,6 @@ module ImprovedCacheHelper
   end
 
   private
-  # TODO: Create an object that has caching read/write on it
   def custom_fragment_for(name, timestamp, options = nil, &block) #:nodoc:
     if Rails.configuration.action_controller.perform_caching
       if options && options[:dogpile_protection]
